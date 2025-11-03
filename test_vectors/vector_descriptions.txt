@@ -1,0 +1,20 @@
+Vector 1: 空数组
+Vector 2: len=1  first=0x00 last=0x00
+Vector 3: len=1  first=0x01 last=0x01
+Vector 4: len=1  first=0xFF last=0xFF
+Vector 5: len=256  first=0x00 last=0xFF
+Vector 6: len=5  first=0x01 last=0x05
+Vector 7: len=100  first=0x01 last=0x64
+Vector 8: len=1000  first=0x27 last=0x39
+Vector 9: len=50  first=0x07 last=0x07
+Vector 10: len=777  first=0x69 last=0x3B
+Vector 11: len=256  first=0xFF last=0x00
+Vector 12: len=8  first=0x01 last=0x80
+Vector 13: len=4  first=0x00 last=0x00
+Vector 14: len=4  first=0xFF last=0xFF
+Vector 15: len=4  first=0x80 last=0x10
+Vector 16: len=8  first=0x01 last=0x80
+Vector 17: len=10  first=0x55 last=0x55
+Vector 18: len=10  first=0xAA last=0xAA
+Vector 19: len=10  first=0x0F last=0x0F
+Vector 20: len=10  first=0xF0 last=0xF0

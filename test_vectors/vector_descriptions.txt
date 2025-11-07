@@ -1,20 +1,118 @@
-Vector 1: 空数组
-Vector 2: len=1  first=0x00 last=0x00
-Vector 3: len=1  first=0x01 last=0x01
-Vector 4: len=1  first=0xFF last=0xFF
-Vector 5: len=256  first=0x00 last=0xFF
-Vector 6: len=5  first=0x01 last=0x05
-Vector 7: len=100  first=0x01 last=0x64
-Vector 8: len=1000  first=0x27 last=0x39
-Vector 9: len=50  first=0x07 last=0x07
-Vector 10: len=777  first=0x69 last=0x3B
-Vector 11: len=256  first=0xFF last=0x00
-Vector 12: len=8  first=0x01 last=0x80
-Vector 13: len=4  first=0x00 last=0x00
-Vector 14: len=4  first=0xFF last=0xFF
-Vector 15: len=4  first=0x80 last=0x10
-Vector 16: len=8  first=0x01 last=0x80
-Vector 17: len=10  first=0x55 last=0x55
-Vector 18: len=10  first=0xAA last=0xAA
-Vector 19: len=10  first=0x0F last=0x0F
-Vector 20: len=10  first=0xF0 last=0xF0
+CRC-8 测试向量描述（约束随机测试）
+========================================
+总计: 1000 个测试向量
+  - 确定性向量: 26 个
+  - 约束随机向量: 974 个
+
+长度分布统计:
+  空数组: 1 个
+  短向量(1-10): 226 个
+  中向量(11-100): 381 个
+  长向量(101-1000): 392 个
+  平均长度: 235.3 字节
+  最大长度: 1000 字节
+
+详细描述（前100个向量）:
+----------------------------------------
+Vector    1: 空数组
+Vector    2: len=   1  first=0x00 last=0x00 [确定性]
+Vector    3: len=   1  first=0x01 last=0x01 [确定性]
+Vector    4: len=   1  first=0xFF last=0xFF [确定性]
+Vector    5: len= 256  first=0x00 last=0xFF [确定性]
+Vector    6: len=   5  first=0x01 last=0x05 [确定性]
+Vector    7: len= 100  first=0x01 last=0x64 [确定性]
+Vector    8: len=1000  first=0x30 last=0x45 [确定性]
+Vector    9: len=  50  first=0x07 last=0x07 [确定性]
+Vector   10: len= 777  first=0xD0 last=0x91 [确定性]
+Vector   11: len= 256  first=0xFF last=0x00 [确定性]
+Vector   12: len=   8  first=0x01 last=0x80 [确定性]
+Vector   13: len=   4  first=0x00 last=0x00 [确定性]
+Vector   14: len=   4  first=0xFF last=0xFF [确定性]
+Vector   15: len=   4  first=0x80 last=0x10 [确定性]
+Vector   16: len=   8  first=0x01 last=0x80 [确定性]
+Vector   17: len=  10  first=0x55 last=0x55 [确定性]
+Vector   18: len=  10  first=0xAA last=0xAA [确定性]
+Vector   19: len=  10  first=0x0F last=0x0F [确定性]
+Vector   20: len=  10  first=0xF0 last=0xF0 [确定性]
+Vector   21: len=   4  first=0x00 last=0x03 [确定性]
+Vector   22: len=   4  first=0xFC last=0xFF [确定性]
+Vector   23: len=   3  first=0x7F last=0x81 [确定性]
+Vector   24: len=   2  first=0x7F last=0x80 [确定性]
+Vector   25: len=   4  first=0x01 last=0x00 [确定性]
+Vector   26: len=   4  first=0xFF last=0x00 [确定性]
+Vector   27: len=  96  first=0xBF last=0x60 [随机]
+Vector   28: len=   2  first=0xDD last=0x99 [随机]
+Vector   29: len= 119  first=0x5D last=0x2F [随机]
+Vector   30: len= 586  first=0x51 last=0xFF [随机]
+Vector   31: len= 821  first=0x2A last=0x5E [随机]
+Vector   32: len=   7  first=0x0D last=0x07 [随机]
+Vector   33: len= 147  first=0x4D last=0xDF [随机]
+Vector   34: len= 743  first=0xFF last=0x00 [随机]
+Vector   35: len=  64  first=0x9F last=0xDD [随机]
+Vector   36: len=  96  first=0x46 last=0xA5 [随机]
+Vector   37: len=  57  first=0x00 last=0x00 [随机]
+Vector   38: len= 836  first=0xF7 last=0x3A [随机]
+Vector   39: len=   6  first=0xDD last=0xD8 [随机]
+Vector   40: len=   9  first=0x62 last=0x6A [随机]
+Vector   41: len=   9  first=0x4F last=0x57 [随机]
+Vector   42: len=  89  first=0xDD last=0x85 [随机]
+Vector   43: len=  67  first=0x9E last=0xE0 [随机]
+Vector   44: len= 111  first=0x75 last=0x07 [随机]
+Vector   45: len=  36  first=0x9F last=0x55 [随机]
+Vector   46: len= 465  first=0xC8 last=0xEB [随机]
+Vector   47: len=  64  first=0x08 last=0x08 [随机]
+Vector   48: len=  18  first=0xD2 last=0xE3 [随机]
+Vector   49: len= 694  first=0xDC last=0x91 [随机]
+Vector   50: len= 277  first=0x49 last=0x35 [随机]
+Vector   51: len= 998  first=0xE5 last=0x83 [随机]
+Vector   52: len=  11  first=0x49 last=0x49 [随机]
+Vector   53: len=   6  first=0x8C last=0xDC [随机]
+Vector   54: len=  91  first=0x86 last=0xE0 [随机]
+Vector   55: len=  78  first=0x9D last=0x7C [随机]
+Vector   56: len=   3  first=0xE0 last=0xDB [随机]
+Vector   57: len= 789  first=0xB0 last=0xC4 [随机]
+Vector   58: len= 715  first=0xA5 last=0xA5 [随机]
+Vector   59: len=  83  first=0xFF last=0xFF [随机]
+Vector   60: len=   1  first=0x30 last=0x30 [随机]
+Vector   61: len= 591  first=0xF4 last=0x75 [随机]
+Vector   62: len=  89  first=0xF7 last=0x4F [随机]
+Vector   63: len= 323  first=0xF7 last=0x52 [随机]
+Vector   64: len= 347  first=0x0D last=0xB3 [随机]
+Vector   65: len=   4  first=0x7D last=0x52 [随机]
+Vector   66: len=   4  first=0xAE last=0x10 [随机]
+Vector   67: len=  77  first=0xD7 last=0x23 [随机]
+Vector   68: len=   9  first=0x37 last=0x37 [随机]
+Vector   69: len= 166  first=0x59 last=0xFE [随机]
+Vector   70: len= 591  first=0x4A last=0x98 [随机]
+Vector   71: len=  30  first=0xB4 last=0x37 [随机]
+Vector   72: len=  46  first=0x50 last=0xED [随机]
+Vector   73: len= 737  first=0xC6 last=0x2C [随机]
+Vector   74: len=  12  first=0x8C last=0x9E [随机]
+Vector   75: len= 853  first=0x1E last=0x72 [随机]
+Vector   76: len= 241  first=0xA7 last=0xEA [随机]
+Vector   77: len= 715  first=0xC8 last=0xF8 [随机]
+Vector   78: len= 200  first=0x9C last=0x35 [随机]
+Vector   79: len=   9  first=0x3A last=0x42 [随机]
+Vector   80: len=  22  first=0x26 last=0x11 [随机]
+Vector   81: len=   7  first=0x8E last=0x8E [随机]
+Vector   82: len=   6  first=0x44 last=0x9A [随机]
+Vector   83: len=1000  first=0x67 last=0x4E [随机]
+Vector   84: len=  34  first=0x5E last=0xE9 [随机]
+Vector   85: len=  44  first=0xD6 last=0xA6 [随机]
+Vector   86: len= 401  first=0xFF last=0x00 [随机]
+Vector   87: len=  57  first=0x9D last=0x65 [随机]
+Vector   88: len=  46  first=0x55 last=0xD3 [随机]
+Vector   89: len=  10  first=0xFF last=0x00 [随机]
+Vector   90: len= 848  first=0xDA last=0x92 [随机]
+Vector   91: len= 499  first=0x79 last=0x6B [随机]
+Vector   92: len= 169  first=0x3C last=0xE4 [随机]
+Vector   93: len= 625  first=0x44 last=0x54 [随机]
+Vector   94: len=  13  first=0x8D last=0x8D [随机]
+Vector   95: len=  86  first=0x88 last=0x02 [随机]
+Vector   96: len=   9  first=0x49 last=0x41 [随机]
+Vector   97: len= 814  first=0xEE last=0xEE [随机]
+Vector   98: len=  20  first=0xC4 last=0x38 [随机]
+Vector   99: len=  32  first=0xF2 last=0x83 [随机]
+Vector  100: len=  94  first=0xA0 last=0x43 [随机]
+
+... (其余 900 个向量为约束随机生成，详见统计信息)
